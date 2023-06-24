@@ -27,6 +27,9 @@ header {
 .logo {
 	background-color: var(--white);
 }
+.logo img {
+	
+}
 .navigation-group {
 	background-color: var(--white);
 	flex-grow: 1;
