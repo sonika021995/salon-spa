@@ -1,0 +1,12 @@
+Linux File System
+https://nepalisupport.wordpress.com/2016/06/29/linux-file-system-hierarchy
+
+CMD / Terminal Commands
+drive_letter:		=> Change drive (cmd) -> ex. to navigate in D drive use D:
+cd			=> Change current working directory to new directory
+dir/ls			=> Directory listing
+cls/clear		=> Clear terminal output
+mkdir directoryname	=> Create new directory
+rmdir directoryname	=> Remove directory
+rm filename.txt		=> Remove file
+touch filename.txt	=> Create new empty file (linux)
