@@ -86,6 +86,8 @@ document.querySelectorAl('') // returns array/NodeList of Elements
 
 */
 
+/*
+// For Single Element
 const dropdown = document.querySelector('.dropdown');
 
 // dropdown.addEventListener('eventName', callbackFunction) // syntax to add event listener
@@ -100,3 +102,31 @@ dropdown.addEventListener('click', function(){
 		classes.add('show');
 	}
 })
+
+*/
+
+// For Multiple Elements
+
+const dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(function(dropdown) {
+	dropdown.addEventListener('click', function(event){
+		// this.querySelector('') // if want to select something in .dropdown;
+		let classes = this.classList
+		
+		if (classes.contains('show')) {
+			classes.remove('show');
+		} else {
+			classes.add('show');
+		}
+	})
+});
+
+document.onclick = function(event) {
+	console.log(event);
+	if (!event.target.closest('.dropdown')) {
+		const openedDropdowns = document.querySelectorAll('.dropdown.show');
+		openedDropdowns.forEach(function(dropdown) {
+			dropdown.classList.remove('show');
+		});
+	}
+}
