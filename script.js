@@ -73,3 +73,30 @@ switch (i) {
 		break;
 }
 */
+
+// Element Selectors
+/*
+let logo = document.getElementsByClassName('logo')
+let logo = document.getElementsByTagName('html')
+let logo = document.getElementsByName('email')
+let logo = document.getElementById('someId')
+
+document.querySelector('.logo') // returns single Element
+document.querySelectorAl('') // returns array/NodeList of Elements
+
+*/
+
+const dropdown = document.querySelector('.dropdown');
+
+// dropdown.addEventListener('eventName', callbackFunction) // syntax to add event listener
+
+dropdown.addEventListener('click', function(){
+	// this.querySelector('') // if want to select something in .dropdown;
+	let classes = this.classList
+	
+	if (classes.contains('show')) {
+		classes.remove('show');
+	} else {
+		classes.add('show');
+	}
+})
