@@ -10,9 +10,11 @@ const staffObj = {
 	name: 'Saad',
 	age: 21
 };
+/*
 function sayHello(name) {
 	return 'Hello ' + name;
 }
+*/
 let i = 30;
 
 /*
